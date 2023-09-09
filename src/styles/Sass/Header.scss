@@ -1,0 +1,13 @@
+@import 'global';
+
+header {
+  @include columnFlex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fstHeader, .scdHeader{
+    @include rowFlex;  
+    align-items: center;
+    justify-content: space-between;
+}
