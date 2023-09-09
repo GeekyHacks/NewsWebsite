@@ -1,4 +1,9 @@
 import DisplayDate from '../JS/Date';
+import facebook from '../assets/images/facebook.svg';
+import twitter from '../assets/images/twitter.svg';
+import search from '../assets/images/search.svg';
+import yemenMap from '../assets/images/yemenMap.svg';
+
 const Header = () => {
   const result = (
     <header>
@@ -14,18 +19,18 @@ const Header = () => {
         <div>
           {' '}
           <div className="socialLinks">
-            <img className="socialImg" src="../assets/images/facebook.svg" alt="Facebook" />
-            <img className="socialImg" src="../assets/images/twitter.svg" alt="Twitter" />
+            <img className="socialImg" src={facebook} alt="Facebook" />
+            <img className="socialImg" src={twitter} alt="Twitter" />
           </div>
           <div className="Search">
             <input className="searchInput" type="text" />
-            <img className="socialImg" src="../assets/images/search.svg" alt="Twitter" />
+            <img className="socialImg" src={search} alt="search" />
           </div>
         </div>
       </div>
       <div className="scdHeader">
-        <img className="socialImg" src="../assets/images/facebook.svg" alt="Facebook" />
-        <img className="socialImg" src="../assets/images/twitter.svg" alt="Twitter" />
+        <img src={yemenMap} className="headerImg" alt="Facebook" />
+        <img src={yemenMap} className="headerImg"  alt="Twitter" />
       </div>
     </header>
   );
