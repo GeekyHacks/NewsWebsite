@@ -2,22 +2,37 @@
 * {
   margin: 0;
   padding: 0;
-  text-decoration: none;
-  outline: none;
 }
 
 header {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  justify-content: stretch;
+  padding: 0.2rem 0.5rem;
 }
 
-.fstHeader, .scdHeader {
+.fstHeader,
+.fstHeader div,
+.scdHeader,
+.date,
+.socialLinks,
+.Search {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
 
-/*# sourceMappingURL=Header.css.map */
+.socialLinks {
+  gap: 1rem;
+}
+
+.socialImg {
+  width: 20px;
+}
+
+.Search {
+  flex: 0.2;
+}
+
+/*# sourceMappingURL=index.css.map */
