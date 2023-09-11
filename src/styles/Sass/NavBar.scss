@@ -1,0 +1,43 @@
+// rowflex items
+.navbar {
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+  padding: 1rem 1rem 1.2rem 1rem;
+  border-bottom: solid 1px #e8e8e8;
+
+  & .logoInfo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  & img {
+    width: 40px;
+  }
+}
+
+.navHeader {
+  font-size: 1.5em;
+  opacity: 0.8;
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+
+  & a {
+    color: gray;
+    text-decoration: none;
+
+    &:active,
+    &:focus {
+      opacity: 0.5;
+    }
+  }
+}
+
+.border {
+  padding: 1rem 1rem 1.2rem 1rem;
+  border-bottom: solid 1px #e8e8e8;
+}

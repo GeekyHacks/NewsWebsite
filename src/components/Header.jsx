@@ -1,4 +1,4 @@
-import DisplayDate from '../JS/Date';
+import DisplayDate from './Date';
 import facebook from '../assets/images/facebook.svg';
 import twitter from '../assets/images/twitter.svg';
 import search from '../assets/images/search.svg';
