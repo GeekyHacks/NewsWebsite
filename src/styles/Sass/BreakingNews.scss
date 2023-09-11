@@ -1,0 +1,30 @@
+/* BreakingNews.scss */
+
+.breaking-news {
+  background-color: #ff0000; // Set the background color for the ticker
+  color: #ffffff; // Set the text color for the ticker
+  overflow: hidden; // Hide any overflow content outside the ticker container
+}
+
+.breaking-news-ticker {
+  white-space: nowrap; // Prevent the headlines from wrapping to the next line
+  animation: scrollTicker 20s linear infinite; // Adjust the animation duration as needed
+}
+
+.ticker-item {
+  padding: 0 10px; // Adjust the padding around each headline
+}
+
+.active {
+  font-weight: bold; // Style the active headline differently, e.g., make it bold
+}
+
+// Keyframe animation for scrolling the ticker
+@keyframes scrollTicker {
+  0% {
+    transform: translateX(100%); // Start the ticker off-screen to the right
+  }
+  100% {
+    transform: translateX(-100%); // Scroll the ticker to the left
+  }
+}
