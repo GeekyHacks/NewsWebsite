@@ -1,27 +1,36 @@
-import displayDate from '../JS/Date';
-import '../styles/Css/Header.css';
+import DisplayDate from './Date';
+import facebook from '../assets/images/facebook.svg';
+import twitter from '../assets/images/twitter.svg';
+import search from '../assets/images/search.svg';
+import yemenMap from '../assets/images/yemenMap.svg';
+
 const Header = () => {
-  displayDate();
   const result = (
     <header>
       <div className="fstHeader">
-        <div className="date">
-          <p id="date"></p>
-          <button type="button">العربية</button>
-          <button type="button">English</button>
+        <div>
+          {' '}
+          <div className="date">
+            <DisplayDate id="date" />
+            <button type="button">العربية</button>
+            <button type="button">English</button>
+          </div>
         </div>
-        <div className="socialLinks">
-          <img className="socialImg" src="../assets/images/facebook.svg" alt="Facebook" />
-          <img className="socialImg" src="../assets/images/twitter.svg" alt="Twitter" />
-        </div>
-        <div className="Search">
-          <input className="searchInput" type="text" />
-          <img className="socialImg" src="../assets/images/search.svg" alt="Twitter" />
+        <div>
+          {' '}
+          <div className="socialLinks">
+            <img className="socialImg" src={facebook} alt="Facebook" />
+            <img className="socialImg" src={twitter} alt="Twitter" />
+          </div>
+          <div className="Search">
+            <input className="searchInput" type="text" />
+            <img className="socialImg" src={search} alt="search" />
+          </div>
         </div>
       </div>
       <div className="scdHeader">
-        <img className="socialImg" src="../assets/images/facebook.svg" alt="Facebook" />
-        <img className="socialImg" src="../assets/images/twitter.svg" alt="Twitter" />
+        <img src={yemenMap} className="headerImg" alt="Facebook" />
+        <img src={yemenMap} className="headerImg"  alt="Twitter" />
       </div>
     </header>
   );

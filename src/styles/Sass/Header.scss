@@ -1,13 +1,34 @@
-@import 'global';
-
 header {
   @include columnFlex;
+  //   align-items: center;
+  justify-content: stretch;
+  padding: 0.2rem 0.5rem;
+}
+.fstHeader,
+.fstHeader div,
+.scdHeader,
+.date,
+.socialLinks,
+.Search {
+  @include rowFlex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+}
+.socialLinks {
+  gap: 1rem;
+}
+.socialImg {
+  width: 20px;
+}
+.Search {
+  flex: 0.2;
 }
 
-.fstHeader, .scdHeader{
-    @include rowFlex;  
-    align-items: center;
-    justify-content: space-between;
+.headerImg{
+    width: 100px;
 }
+// @media (min-width: 375px) {
+//   fstHeader {
+//     display: none;
+//   }
+// }

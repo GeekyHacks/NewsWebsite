@@ -1,23 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:wght@200;300;400;500;600;700;800&family=Roboto+Slab:wght@100&family=Roboto:wght@700&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  outline: none;
-}
+/* Error: Undefined mixin.
+ *   ,
+ * 2 |   @include columnFlex;
+ *   |   ^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   Sass\Header.scss 2:3  root stylesheet */
 
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a   \2577 \a 2 \2502    @include columnFlex;\a   \2502    ^^^^^^^^^^^^^^^^^^^\a   \2575 \a   Sass\\Header.scss 2:3  root stylesheet";
 }
-
-.fstHeader, .scdHeader {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-/*# sourceMappingURL=Header.css.map */
